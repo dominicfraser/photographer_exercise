@@ -1,7 +1,7 @@
-public class AnalogCamera extends Camera implements Printable{
+public class AnalogCamera extends Camera{
 
-  public String printDetails();{
-    
-  }
+ public AnalogCamera(String type, boolean working){
+   super(type, working);
+ }
   
 }

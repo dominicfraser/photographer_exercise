@@ -9,7 +9,7 @@ public class PhotographerTest{
   @Before
   public void before(){
     photographer = new Photographer();
-    digitalCamera = new DigitalCamera();
+    digitalCamera = new DigitalCamera("Canon", true);
   }
 
   @Test 
