@@ -9,7 +9,7 @@ public abstract class Camera{
   }
 
   public String printDetails(){
-    String status = "undef";
+    String status = null;
     if(working){
       status = "is functional";
     }
