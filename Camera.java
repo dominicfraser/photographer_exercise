@@ -1,10 +1,10 @@
 public abstract class Camera{
 
-  private String type;
+  private String brand;
   private boolean working;
 
-  public Camera(String type, boolean working){
-    this.type = type;
+  public Camera(String brand, boolean working){
+    this.brand = brand;
     this.working = working; 
   }
 
@@ -20,7 +20,7 @@ public abstract class Camera{
     // String status = String.valueOf(this.working);
     //works but above is more useful output
 
-    return this.type + " " + status;
+    return this.brand + " " + status;
   }
 
 
