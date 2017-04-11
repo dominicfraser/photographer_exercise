@@ -1,5 +1,6 @@
 import java.util.HashMap;
 import java.util.ArrayList;
+import java.util.Set;
 
 public class Photographer{
 
@@ -37,6 +38,15 @@ public class Photographer{
 
   public void addToJournal(String event, Integer photos){
     journal.put(event, photos);
+  }
+
+  public int numberOfPhotos(){
+    int total = 0;
+    Set<String> eventNames = journal.keySet();
+    for(String name : eventNames){
+      total += journal.get(name);
+    }
+    return total;
   }
 
 
