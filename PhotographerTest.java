@@ -39,7 +39,7 @@ public class PhotographerTest{
 
   @Test
   public void canAddJournalEntry(){
-    photographer.addToJournal( "Wedding1",20 )
+    photographer.addToJournal( "Wedding1",20 );
     assertEquals ( 1, photographer.journalCount() );
   }
 

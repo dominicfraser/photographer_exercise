@@ -23,5 +23,13 @@ public class Photographer{
     return cameras.size();
   }
 
+  public int journalCount(){
+    return journal.size();
+  }
+
+  public void addToJournal(String event, Integer photos){
+    journal.put(event, photos);
+  }
+
 
 }
