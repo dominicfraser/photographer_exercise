@@ -13,8 +13,13 @@ public class Photographer{
     cameras.add(camera);
   }
 
+  public void removeCamera(Camera camera){
+    this.cameras.remove(camera);
+  }
+
   public int cameraCount(){
     return cameras.size();
   }
+
 
 }
