@@ -17,6 +17,9 @@ public abstract class Camera{
       status = "is broken";
     }
 
+    // String status = String.valueOf(this.working);
+    //works but above is more useful output
+
     return this.type + " " + status;
   }
 
