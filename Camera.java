@@ -1,4 +1,4 @@
-public abstract class Camera{
+public abstract class Camera implements BrandProviding{
 
   private String brand;
   private boolean working;
