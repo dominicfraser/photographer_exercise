@@ -49,5 +49,12 @@ public class PhotographerTest{
     assertEquals ( 1, photographer.journalCount() );
   }
 
+  @Test
+  public void totalNumberOfPhotos(){
+    photographer.addToJournal( "Wedding1",20 );
+    photographer.addToJournal( "Wedding2",10 );
+    assertEquals( 30,photographer.numberOfPhotos() );
+  }
+
 }
 
