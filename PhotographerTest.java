@@ -37,5 +37,11 @@ public class PhotographerTest{
     assertEquals( "Canon is broken", analogueCamera.printDetails() );
   }
 
+  @Test
+  public void canAddJournalEntry(){
+    photographer.addToJournal( "Wedding1",20 );
+    assertEquals ( 1, photographer.journalCount() );
+  }
+
 }
 
