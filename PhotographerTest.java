@@ -5,11 +5,13 @@ public class PhotographerTest{
 
   Photographer photographer;
   DigitalCamera digitalCamera;
+  AnalogCamera analogueCamera;
 
   @Before
   public void before(){
     photographer = new Photographer();
     digitalCamera = new DigitalCamera("Canon", true);
+    analogueCamera = new AnalogCamera("Canon", false);
   }
 
   @Test 
@@ -26,10 +28,14 @@ public class PhotographerTest{
   }
 
   @Test
-  public void canPrintStatus(){
+  public void canPrintStatusWhenFunctional(){
     assertEquals( "Canon is functional",digitalCamera.printDetails() );
   }  
 
+  @Test
+  public void canPrintStatusWhenBroken(){
+    assertEquals( "Canon is broken", analogueCamera.printDetails() );
+  }
 
 }
 
