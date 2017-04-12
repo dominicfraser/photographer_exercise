@@ -1,3 +1,3 @@
-public class Tripod{
+public class Tripod implements BrandProviding{
   
 }
